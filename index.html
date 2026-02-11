@@ -4,141 +4,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Zain Ul Abdin - Frontend Developer">
+    <meta name="author" content="Zain Ul Abdin">
     <title>Zain Ul Abdin | Portfolio</title>
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <div class="logo">Zain Ul Abdin</div>
-        <ul>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="logo">Zain.</div>
+        <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#hobbies">Interests</a></li>
             <li><a href="#future">Goals</a></li>
         </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </nav>
 
-    <!-- HERO + ABOUT -->
-    <section id="hero" class="slide hero-about">
-        <div class="container">
-            <div class="hero-left">
+    <!-- Header / Hero Section -->
+    <section id="hero" class="header-section">
+        <div class="wrapper">
+            <!-- Profile Image -->
+            <!-- TODO: Compress this image later, it's too big -->
+            <div class="img-container">
                 <img src="https://scontent.fkhi28-1.fna.fbcdn.net/v/t39.30808-6/627674504_1677369707003711_2253019182528896525_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=MHVLfDQIrucQ7kNvwH1oJL5&_nc_oc=AdkIy_0KI6rLe8Xg4CXlRod1xi926MXdfSk35nLD2KwTF0HFgeTtPoXbI494B2CUt5g&_nc_zt=23&_nc_ht=scontent.fkhi28-1.fna&_nc_gid=bHB9CNZi_5sTtpQeDFmCyw&oh=00_AfuwQ1hyKZ2GL2HeCjH7RMPSP67U1d5EmsT0dTm94yM4ww&oe=698EB916"
-                    alt="Zain">
+                    alt="Zain Profile">
             </div>
-            <div class="hero-right">
-                <h1>👋 It's me
-                    <br> M Zain Ul Abdin
-                </h1>
-                <h3>Call me Zaini</h3>
-                <p>I am currently doing an internship as a Frontend Web Developer at Internee.pk, where I am learning
-                    practical web development skills and working on real projects.</p>
-                <p>I am curious about technology and love learning about AI, automation, and new tools. I enjoy creating
-                    smart solutions that make life easier.</p>
-                <p>Through my projects, I aim to combine creativity and technology to deliver innovative and useful
-                    solutions.</p>
-                <a href="https://drive.google.com/file/d/1IGiZpt2gHGeqSsP4GWaPn3SdP2cnBkDr/view?usp=sharing"
-                    class="cv-btn" target="_blank">Download CV</a>
+
+            <div class="content-box">
+                <h1>Hi, I'm <br> <span class="highlight">M Zain Ul Abdin</span></h1>
+                <p class="subtitle">You can call me <b>Zaini</b></p>
+
+                <p class="bio">
+                    Currently interning as a Frontend Web dev at Internee.pk.
+                    I'm really into AI tools and trying to automate boring stuff.
+                    Just trying to learn as much as I can and build cool things.
+                </p>
+
+                <div class="btn-group">
+                    <!-- Google Drive Link for CV -->
+                    <a href="https://drive.google.com/file/d/1IGiZpt2gHGeqSsP4GWaPn3SdP2cnBkDr/view?usp=sharing"
+                        target="_blank" class="btn-primary">Download My CV</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- EDUCATION SLIDE -->
-    <section id="education" class="slide education">
-        <h2>🎓 Education</h2>
-        <div class="edu-cards">
+
+    <!-- Education Section -->
+    <!-- Need to add icons later -->
+    <section id="education" class="section-padding">
+        <h2 class="section-title">Education</h2>
+
+        <div class="cards-container">
+            <!-- School 1 -->
             <div class="edu-card">
-                <h3>🏫 Bahria College EAB-2</h3>
-                <p>Completed secondary education with focus on science and mathematics to build strong foundational
-                    knowledge.</p>
+                <h3>Bahria College EAB-2</h3>
+                <span class="date">Secondary School</span>
+                <p>Focused on Science and Maths. This is where I started liking tech.</p>
             </div>
+
+            <!-- School 2 -->
             <div class="edu-card">
-                <h3>🏢 Bahria College Karsaz</h3>
-                <p>Intermediate studies emphasizing technical subjects and problem-solving, preparing for university
-                    engineering courses.</p>
+                <h3>Bahria College Karsaz</h3>
+                <span class="date">Intermediate</span>
+                <p>Pre-engineering studies. Did a lot of problem solving here.</p>
             </div>
-            <div class="edu-card">
-                <h3>🎓 Bahria University Karachi</h3>
-                <p>Pursuing BS Mechanical Engineering while integrating AI & automation into projects to learn
-                    real-world applications.</p>
+
+            <!-- Uni -->
+            <div class="edu-card featured">
+                <h3>Bahria University Karachi</h3>
+                <span class="date">Present</span>
+                <p>Doing my BS in Mechanical Engineering. But I'm also learning coding and AI on the side because that's
+                    the future.</p>
             </div>
         </div>
     </section>
 
-    <!-- HOBBIES SLIDE -->
-    <section id="hobbies" class="slide hobbies">
-        <h2>🎯 Hobbies & Interests</h2>
-        <div class="edu-cards">
-            <div class="edu-card">
-                <h3>🌍 Traveling</h3>
-                <p>Exploring new countries and cultures to gain experiences and broaden perspectives.</p>
-            </div>
-            <div class="edu-card">
-                <h3>📚 Reading</h3>
-                <p>Books on technology, AI, self-growth, and innovation to improve knowledge and skills.</p>
-            </div>
-            <div class="edu-card">
-                <h3>💡 Exploring Innovations</h3>
-                <p>Experimenting with new technologies, testing emerging trends, and applying them in projects.</p>
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="dark-section">
+        <div class="inner-width">
+            <h2 class="section-title white-text">What I Like To Do</h2>
+            <div class="interests-grid">
+                <div class="interest">
+                    <div class="icon">✈️</div>
+                    <h4>Traveling</h4>
+                    <p>Love going to new places and seeing how other people live/work.</p>
+                </div>
+
+                <div class="interest">
+                    <div class="icon">�</div>
+                    <h4>Reading</h4>
+                    <p>Mostly tech blogs, self-help books, or anything about AI.</p>
+                </div>
+
+                <div class="interest">
+                    <div class="icon">💡</div>
+                    <h4>New Tech</h4>
+                    <p>I spend way too much time testing new AI tools and messing around with code.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- FUTURE GOALS SLIDE -->
-    <section id="future" class="slide future">
-        <h2>🚀 Future Goals</h2>
-        <div class="edu-cards">
-            <div class="edu-card">
-                <h3>💻 Master AI & Automation Tools</h3>
-                <p>Learn n8n, AI-based automation, and advanced programming to build smart solutions for real-world
-                    problems.</p>
+    <!-- Goals Section -->
+    <section id="future" class="section-padding">
+        <h2 class="section-title">Future Plans</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Master AI & Automation</h3>
+                <p>Really want to get good at n8n and Python for automation.</p>
             </div>
-            <div class="edu-card">
-                <h3>🌐 Freelancing & Entrepreneurship</h3>
-                <p>Use my skills to work as a freelancer and eventually start a business providing AI-powered solutions
-                    globally.</p>
+            <div class="timeline-item">
+                <h3>Freelancing</h3>
+                <p>Goal is to start taking clients for web dev & automation work soon.</p>
             </div>
-            <div class="edu-card">
-                <h3>🎯 Continuous Learning & Sharing</h3>
-                <p>Explore new technologies, share knowledge, and implement innovative ideas that positively impact
-                    people.</p>
+            <div class="timeline-item">
+                <h3>Giving Back</h3>
+                <p>Share what I learn with others. Maybe start a blog or YouTube channel one day.</p>
             </div>
         </div>
     </section>
-    <!-- THANK YOU SLIDE -->
-    <section id="thankyou" class="slide purple">
-        <div class="thankyou">
+
+    <!-- Thank you note -->
+    <section id="thankyou" class="end-note">
+        <div class="note-card">
             <img src="https://media.licdn.com/dms/image/v2/D4E0BAQGl8cTXTVt8ew/company-logo_200_200/company-logo_200_200/0/1689237835480?e=2147483647&v=beta&t=1XOXADXv9id-mlXiphQXpW0rJF2MMgGyorGDUEjAG1s"
-                alt="Internee.pk Logo" class="internee-logo">
-            <h3>Thank You Internee.pk</h3>
+                alt="Internee.pk" class="small-logo">
+            <h3>Thanks Internee.pk!</h3>
             <p>
-                I am truly grateful to Internee.pk for providing such an excellent
-                Web Development internship opportunity. This internship is not only
-                improving my technical skills but also giving me valuable hands-on
-                experience in real-world projects.
-            </p>
-            <p>
-                Through this internship, I am learning practical implementation,
-                project structuring, problem-solving techniques, and professional
-                development skills that are essential in the tech industry.
-                It is a great platform for students who want to build real expertise
-                instead of just theoretical knowledge.
-            </p>
-            <p>
-                Thank you for creating an environment where learning,
-                growth, and innovation are encouraged.
+                Seriously, this internship has been great. I've learned a lot about how real projects work, not just the
+                code part but the structure and deadlines too.
+                <br><br>
+                Grateful for the opportunity!
             </p>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
-        <div class="footer-container">
-            <p>© 2026 Zain Ul Abdin | Portfolio</p>
-            <p>Developed by Muhammad Zain Ul Abdin</p>
-        </div>
+        <p>&copy; 2026 Zain Ul Abdin. All rights reserved.</p>
+        <p class="tiny-text">Built with Coffee & Code.</p>
     </footer>
 
     <script src="script.js"></script>
